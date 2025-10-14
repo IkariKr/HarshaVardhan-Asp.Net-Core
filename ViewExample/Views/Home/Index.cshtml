@@ -1,0 +1,96 @@
+@using ViewExample.Models
+@* 指定模型类型 *@
+@model List<Person> 
+
+@{
+    
+    var person = new Person() { PersonName = "Json" ,DateOfBirth = null,Gender = Gender.Male};
+    //person.DateOfBirth = new DateTime(1980, 1, 1);
+    person.DateOfBirth = null;
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @* <title>@appTitle</title> *@
+    <title>@ViewData["pageTitle"]</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div>
+    <h1>Welcome to Asp.Net Core App</h1>
+    <h2>Hello @person.PersonName</h2>
+    <a href="/person-with-product">person-with-product</a>
+    @if (person.DateOfBirth.HasValue)
+    {
+        person.Email = "json@email.com";
+        var age = Math.Round((DateTime.Now - person.DateOfBirth).GetValueOrDefault().TotalDays / 365.2425);
+        <h3>age: @age years old</h3>
+    }
+    else
+    {
+        <h3>Date of birth is not set</h3>
+    }
+
+    @switch (person.Gender)
+    {
+        case Gender.Male:
+            <p>Welcome Mr. @person.PersonName</p>
+            break;
+        case Gender.Female:
+            <p>Welcome Mrs. @person.PersonName</p>
+            break;
+        default:
+            <p>Welcome @person.PersonName</p>
+            break;
+    }
+
+    @{
+        var people = ViewData["people"] as List<Person> ?? [];
+    }
+
+    @foreach (var person2 in ViewBag.people)
+    {
+        <div>@person2.PersonName</div>
+        <div>@person2.DateOfBirth</div>
+        <div>@person2.Email</div>
+    }
+    @for (var i = 0; i < Model.Count(); i++)
+    {
+        <div>@Model[i].PersonName</div>
+        <div>@Model[i].DateOfBirth</div>
+        <div>@Model[i].Email</div>
+    }
+
+    @{
+        @* This is a static text *@
+        <text>Hello to static text</text>
+        <div>Hello to static text</div>
+        @:Hello to static text
+    }
+
+    <div>@GetAge(new DateTime(2000, 1, 1)) years old</div>
+
+    @functions{
+
+        double GetAge(DateTime? dateTime)
+        {
+            return 2;
+        }
+
+        int x = 10;
+    }
+
+    @*执行Js/Html代码*@
+    @{
+        var alertMessage = $"<script>alert('{people.Count} Hello World')</script>";
+        <div>@alertMessage</div>
+    }
+    @Html.Raw(alertMessage);
+
+</div>
+</body>
+</html>

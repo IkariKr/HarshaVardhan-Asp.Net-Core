@@ -1,0 +1,24 @@
+@model PersonAndProductWarpperModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Person and Product</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div class="page-content">
+    <h1>Person and Product</h1>
+    <div class="box w-100">
+        <h3>Person and Product</h3>
+        <h4>Person: @Model.PersonData.PersonName</h4>
+        <h4>Product: @Model.ProductData.ProductName</h4>
+    </div>
+</div>
+</body>
+</html>

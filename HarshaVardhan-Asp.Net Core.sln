@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IActionResultExample", "IAc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelValidationsExample", "ModelValidationsExample\ModelValidationsExample.csproj", "{BFCA9A1C-E83D-421D-B5BA-49E206F75DB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewExample", "ViewExample\ViewExample.csproj", "{3ED10A97-CBDC-48D6-AD50-1CB5015F9AB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{BFCA9A1C-E83D-421D-B5BA-49E206F75DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFCA9A1C-E83D-421D-B5BA-49E206F75DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFCA9A1C-E83D-421D-B5BA-49E206F75DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED10A97-CBDC-48D6-AD50-1CB5015F9AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED10A97-CBDC-48D6-AD50-1CB5015F9AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED10A97-CBDC-48D6-AD50-1CB5015F9AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED10A97-CBDC-48D6-AD50-1CB5015F9AB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

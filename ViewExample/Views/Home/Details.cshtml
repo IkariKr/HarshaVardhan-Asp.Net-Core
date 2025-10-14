@@ -1,0 +1,28 @@
+@using ViewExample.Models;
+@model Person
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Person Details</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div>
+    <div class="page-content">
+        @if (Model is null)
+        {
+            <h1>Not Found</h1>
+        }
+        else
+        {
+            <h1>@Model?.PersonName</h1>
+        }
+        
+        
+    </div>
+
+</div>
+</body>
+</html>
