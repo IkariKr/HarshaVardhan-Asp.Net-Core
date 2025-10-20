@@ -1,0 +1,13 @@
+<h1>Home</h1>
+
+<partial name="_ListPartialView"></partial>
+
+@{
+    // 部分视图拿到的ViewData和视图拿到的ViewData是不同的对象
+    ViewBag.ListItems = new List<string>() {"Delhi2", "Mumbai2", "Chennai2"};
+    ViewData["ListTitle"] = "Cities2";
+}
+
+<div class="box">
+    <partial name="_ListPartialView"></partial>
+</div>

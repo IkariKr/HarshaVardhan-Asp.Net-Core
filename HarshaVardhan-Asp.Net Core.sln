@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewExample", "ViewExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutViewsExample", "LayoutViewsExample\LayoutViewsExample.csproj", "{4868CADA-C5A3-42B9-AB83-40640BD676FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialViewsExample", "PartialViewsExample\PartialViewsExample.csproj", "{13B0836E-2279-4577-8158-DE480590408A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewComponentsExample", "ViewComponentsExample\ViewComponentsExample.csproj", "{EA9A5693-7738-4C6B-B21A-A00C68E136DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{4868CADA-C5A3-42B9-AB83-40640BD676FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4868CADA-C5A3-42B9-AB83-40640BD676FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4868CADA-C5A3-42B9-AB83-40640BD676FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B0836E-2279-4577-8158-DE480590408A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B0836E-2279-4577-8158-DE480590408A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B0836E-2279-4577-8158-DE480590408A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B0836E-2279-4577-8158-DE480590408A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9A5693-7738-4C6B-B21A-A00C68E136DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9A5693-7738-4C6B-B21A-A00C68E136DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9A5693-7738-4C6B-B21A-A00C68E136DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9A5693-7738-4C6B-B21A-A00C68E136DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
