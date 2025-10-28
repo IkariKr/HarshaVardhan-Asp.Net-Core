@@ -1,0 +1,26 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    CurrentEnvironment : @ViewBag.CurrentEnvironment;
+</div>
+
+<environment include="Beta">
+    <button class="button button-blue-back">Button</button>
+</environment>
+
+<environment exclude="Beta">
+    <button class="button button-Red-back">Button</button>
+</environment>
+
+
+</body>
+</html>
